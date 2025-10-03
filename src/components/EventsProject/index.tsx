@@ -1,13 +1,14 @@
 import React, {useState } from "react";
 import { InfosComponent, MainWraper, CustomSwiperButton } from "./style";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from 'swiper';
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export const CardsComponents: React.FC = () => {
-  const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const [isBeginning, setIsBeginning] = useState<boolean>(true);
   const [isEnd, setIsEnd] = useState<boolean>(false);
 
@@ -58,7 +59,7 @@ export const CardsComponents: React.FC = () => {
         verifbullet={isBeginning ? 1 : 0}
         className="custom-prev"
         onClick={() => {
-          swiperInstance.slidePrev();
+          swiperInstance?.slidePrev();
         }}
       >
         <svg
@@ -89,7 +90,7 @@ export const CardsComponents: React.FC = () => {
         verifbullet={isEnd ? 1 : 0}
         className="custom-next swiper-button-disabled"
         onClick={() => {
-          swiperInstance.slideNext();
+          swiperInstance?.slideNext();
         }}
       >
         <svg
