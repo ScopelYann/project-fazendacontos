@@ -1,7 +1,6 @@
 "use client";
 
 import Header from "@/components/Header";
-import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 import CLOUD from "vanta/dist/vanta.clouds.min";
@@ -9,7 +8,6 @@ import { Apresentacion, ContainerAprent, Main } from "./style";
 import {CardsComponents} from "../components/EventsProject/index"
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
 
   useEffect(() => {
