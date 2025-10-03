@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  width: 100vw;
   height: 100vh;
   z-index: 10000;
-  background: #024a66;
-  background: linear-gradient(0deg, #04668d 5%, rgba(237, 221, 83, 0) 100%);
+  background: #04668d;
+  background: linear-gradient(0deg, #04668d 5%, rgba(237, 221, 83, 0) 100%); 
+  margin: 0;
 `;
 
 export const ContainerAprent = styled.div`
-  height: 100vh;
-  margin: 0;
+  position: relative;
   z-index: -1;
+  height: 100vh;
 `;
-export const Apresentacion = styled.div``;
+export const Apresentacion = styled.div`
+  position: relative;
+  bottom: 80px;
+  background: #04668d;
+`;
 
 export const InfosEvent = styled.div`
   height: 50%;
@@ -22,4 +26,4 @@ export const InfosEvent = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-`
+`;
