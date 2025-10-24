@@ -28,6 +28,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js" as="script"/>
         {children}
       </body>
     </html>
