@@ -4,7 +4,11 @@ export const Main = styled.main`
   height: 100vh;
   z-index: 10000;
   background: #04668d;
-  background: linear-gradient(0deg, #04668d 5%, rgba(237, 221, 83, 0) 100%); 
+  background: linear-gradient(
+    0deg,
+    rgba(4, 102, 141, 0.88) 10%,
+    rgba(237, 221, 83, 0) 100%
+  );
   margin: 0;
 `;
 
